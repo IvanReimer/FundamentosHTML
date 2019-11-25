@@ -1,0 +1,186 @@
+<!DOCTYPE html> <!-- Etiqueta de Apertura para un documento HTML version 5
+					gracias a la simplificacion por parte de la W3C es mucho mas sencillo el uso de esta etiqueta.
+					EJEMPLO DE VERSION ANTERIOR DE LA ETIQUETA DOCTYPE:
+
+					<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+					<html xmlns="http://www.w3.org/1999/xhtml">
+ -->
+<!-- HTML: Etiqueta que incica lo que abarca mi documento
+	debemos tenes en cuenta que el Mal cierre de una etiqueta, escribir una propiedad equivocada o el mal cierre de un valor, hara que el navegado no pueda interpretar correctamente la sintaxis de nuestro HTML -->
+<html>
+
+<!-- HEAD: representa la cabecera del sitio y aqui colocaremos todos los elementos no visibles
+	tambien se pueden establecer las reglas CSS y comandos JS ademas de la vinculacion de METADATOS -->
+	<head>
+	<!-- META -->
+		<meta charset="utf-8">
+
+	<!-- LINK: permite vincular un elemento externo a nuestro documento HTML
+		entre las cosas que podemos vincular se encuentran las Hojas de Estilo CSS, Scripts JS e iconos-->
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<link rel="icon" type="icon/png" href="img/icon.png">
+
+	<!-- TITLE: Es el titulo que aparecera en la ventana/pestaña del Navegador -->
+		<title>Curso de HTML5</title>
+
+	</head>
+
+<!-- BODY: Indica el comienzo del cuerpo de la pagina
+	aqui colocaremos todos los elementos visibles (Estructura y Diseño) -->
+	<body>
+
+	<!-- HEADER: Representa la cabecera o encabezado de mi pagina
+		esta seccion es lo primero que se ve en relacion a contenido -->
+		<header>
+			<img src="img/html5.png" style="height:4rem; float: left; margin-top:-10px;">
+			<img src="img/css3.png" style="height:4rem; float: right; margin-top:-10px;">
+			<h1>HTML5</h1>
+			<p class="subtitulo">&nbsp;&nbsp;&nbsp;&nbsp;y mucho mas...</p>
+		</header>
+
+	<!-- NAV: Indica la ubicacion de la Seccion de Navegacion
+		en esta seccion colocamos los links a los demas sitios ya sean internos o externos -->
+		<nav>
+			<ul class="links">
+				<li class="active"><a href="index.html" style="color:#192168">Etiquetas</a></li>
+				<li><a href="imagenes.html">Imagenes</a></li>
+				<li><a href="formularios.html">Formularios</a></li>
+				<li><a href="tablas.html">Tablas</a></li>
+			</ul>
+		</nav>
+
+	<!-- ASIDE: etiqueta que se utiliza para identificar contenido tangencial de nuestra pagina
+		en el caso de los Blogs, puede utilizarse para mostrar todos los posts o para un listado de productos que pueden llegar a interesar a un Visitante en las paginas de Compra/venta -->
+		<aside>
+			<p>Dale un vistazo a las Etiquetas y atributos mas utilizados en HTML5</p>
+			<br>
+			<ul>
+				<li >ESTRUCTURA</li>
+				<hr>
+				<ul style="margin-left:1rem;">
+					<li>&lt;html></li>
+					<li>&lt;head></li>
+					<li>&lt;body></li>
+				</ul>
+				<br>
+				<li>SEMANTICO</li>
+				<hr>
+				<ul style="margin-left:1rem;">						
+					<li>&lt;header></li>
+					<li>&lt;nav></li>
+					<li>&lt;article></li>
+					<li>&lt;section></li>
+					<li>&lt;aside></li>
+					<li>&lt;footer></li>
+				</ul>
+				<br>
+				<li>CONTENIDO</li>
+				<hr>
+				<ul style="margin-left:1rem;">
+					<li>&lt;h1> a &lt;h6></li>
+					<li>&lt;p></li>
+					<li>&lt;ul> y &lt;ol></li>
+					<ul style="margin-left:1rem;">			
+						<li>&lt;li></li>
+					</ul>
+					<li>&lt;table></li>
+					<ul style="margin-left:1rem;">
+						<li>&lt;th></li>
+						<li>&lt;tr></li>
+						<li>&lt;td></li>
+					</ul>
+				</ul>
+				<br>
+				<li>DE LINEA</li>
+				<hr>
+				<ul style="margin-left:1rem;">
+					<li>&lt;span></li>
+					<li>&lt;strong></li>
+					<li>&lt;em></li>
+					<li>&lt;br></li>
+					<li>&lt;a></li>
+				</ul>
+				<br>
+				<li>DE BLOQUE</li><hr>
+				<ul style="margin-left:1rem;">
+					<li>&lt;div></li>
+					<li>&lt;img></li>
+					<li>&lt;hr></li>
+				</ul>
+			</ul>
+		</aside>
+
+	<!-- ARTICLE: Indica donde se ubicara el contenido Principal de nuestra pagina 
+		la informacion colocada en Article posee relacion directa con el elemento HEADER -->
+		<article>
+		<!-- SECTION: representa un elemento que puede funcionar tanto dentro como fuera de nuestra pagina
+			Su contenido es individual y es afectado por su entorno, por lo tanto puede contar con otro elementos Jerarquicos cono HEADER H1 FOOTER sin afectar la semantica de mi pagina -->
+			<section>
+					<p><strong>to TAG ot not to TAG</strong><br>
+						<em>That is the Question!</em></p>
+					<p> 
+						Con la incursion de HTML5 la maquetacion web no ha sido lo mismo, ha evolucionado gracias a la simplificacion de ciertas etiquetas que requerian un conocimiento avanzado de este lenguaje, limitandolas a solo unas pocas lineas. 
+					</p>
+
+					<p>
+						Una de las ventajas es la priorizacion del diseño resposivo por sobre todas las cosas, ya que, como podemos notar al realizar cualquier busqueda en Google, los primeros resultados son aquellos, que ademas de poseer contenido original y de buena calidad, poseen un diseño adaptable al medio en el que dicho sitio se estara visualizando.
+					</p>
+					
+					<p>
+						Entre muchas cosas mas otras al incluir la etiqueta <code> &lt;!Doctype HTML></code>  en nuestro documento, no solamente estaremos indicando que estmos utilizando la version 5 de este lenguaje de etiquetas, sino que al implementalo, el navegador podra interpretar lo que estamos escribiendo y muchas veces, sin necesidad de encerrar todo nuestro contenido en etiquetas, como sucedia en versiones anteriores; donde si no encerrabamos todo correctamente dentro de las etiquetas, no ibamos a poder visualizar correctamente nuestro sitio.
+					</p>	
+					
+					<p>
+						Aunque por mas que esta version interprete todo lo que estemos escribiendo sin respetar la estructura del lenguaje a rajatablas, es fundamental, no caer en la falacia de que el navegador interpretara auromaticamente todo nuestro codigo, ya que no es tan asi. 
+					</p>
+
+					<p>
+						Debemos tener en cuenta que en un documento HTML no solamente estaremos trabajando con dicho lenguaje y sus etiquetas, sino que tambien haremos implementacion de CSS y sus Reglas, asi como tambien  JAVASCRIPT y su codigo para darle interactividad a nuestro sitio; por ende el navegador no podra interpretar dicha sintaxis, si nuestro codigo no esta etiquetado correctamente (ya sea porque no hayamos cerrado una etiqueta, o nos hayamos equivocado el implementar un atributor o valor, e incluso confundirnos con el cierre de los mismo)  
+					</p>
+			</section>
+			<section>
+				<p> <strong>Ejemplo de Codigo HTML</strong></p>
+				<div class="section">
+					<code>
+						<p class="code">&lt;!DOCTYPE html></p>
+						<p class="code" style="margin-left:2rem;color:lightgreen;">&lt;html></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;head></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;title><span>Titulo de Mi Pagina</span> &lt;/title></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;/head></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;body></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;header></p>
+						<p class="code" style="margin-left:8rem">&lt;nav><span>Links de mi Sitio</span>&lt;/nav></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;/header></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;article></p>
+						<p class="code" style="margin-left:8rem;color:orange;">&lt;section><span>Seccion Independiente</span> &lt;/section></p>
+						<p class="code" style="margin-left:8rem;color:orange;">&lt;section><span>Seccion Independiente</span> &lt;/section></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;/article></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;aside><span>Elemento Tangencial </span>&lt;/aside></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;footer></p>
+						<p class="code" style="margin-left:8rem;color:orange;">&lt;adress><span>Direccion de Contacto</span> &lt;/adress></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;/footer></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;/body></p>
+						<p class="code" style="margin-left:2rem;color:lightgreen;">&lt;/html></p>
+					</code>
+				</div>
+			</section>
+		</article>
+
+
+	<!--FOOTER: equivale al pie de pagina de nuestro documento y aqui es donde se coloca informacion de &copy Copyright, derechos de autor, propiedad intelectual, datos de contacto y links a otras paginas del sitio o redes sociales, si bien no es obligatorio, hoy en dia es standar el uso de este tipo de elementos-->
+		<footer>
+			<div class="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html" style="color:#192168">Etiquetas</a></li>
+					<li><a href="imagenes.html">Imagenes</a></li>
+					<li><a href="formularios.html">Formularios</a></li>
+					<li><a href="tablas.html">Tablas</a></li>
+				</ul>
+			</div>
+			<div class="autor">
+				<p>Diseñado por <strong>CRISTIAN RACEDO</strong><br>
+				&copy todos los Derechos Reservados</p>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html> <!-- Etiqueta de Apertura para un documento HTML version 5
+					gracias a la simplificacion por parte de la W3C es mucho mas sencillo el uso de esta etiqueta.
+					EJEMPLO DE VERSION ANTERIOR DE LA ETIQUETA DOCTYPE:
+
+					<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+					<html xmlns="http://www.w3.org/1999/xhtml">
+ -->
+<!-- HTML: Etiqueta que incica lo que abarca mi documento
+	debemos tenes en cuenta que el Mal cierre de una etiqueta, escribir una propiedad equivocada o el mal cierre de un valor, hara que el navegado no pueda interpretar correctamente la sintaxis de nuestro HTML -->
+<html>
+
+<!-- HEAD: representa la cabecera del sitio y aqui colocaremos todos los elementos no visibles
+	tambien se pueden establecer las reglas CSS y comandos JS ademas de la vinculacion de METADATOS -->
+	<head>
+	<!-- META -->
+		<meta charset="utf-8">
+
+	<!-- LINK: permite vincular un elemento externo a nuestro documento HTML
+		entre las cosas que podemos vincular se encuentran las Hojas de Estilo CSS, Scripts JS e iconos-->
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<link rel="icon" type="icon/png" href="img/icon.png">
+
+	<!-- TITLE: Es el titulo que aparecera en la ventana/pestaña del Navegador -->
+		<title>Curso de HTML5</title>
+
+	</head>
+
+<!-- BODY: Indica el comienzo del cuerpo de la pagina
+	aqui colocaremos todos los elementos visibles (Estructura y Diseño) -->
+	<body>
+
+	<!-- HEADER: Representa la cabecera o encabezado de mi pagina
+		esta seccion es lo primero que se ve en relacion a contenido -->
+		<header>
+			<img src="img/html5.png" style="height:4rem; float: left; margin-top:-10px;">
+			<img src="img/css3.png" style="height:4rem; float: right; margin-top:-10px;">
+			<h1>HTML5</h1>
+			<p class="subtitulo">&nbsp;&nbsp;&nbsp;&nbsp;y mucho mas...</p>
+		</header>
+
+	<!-- NAV: Indica la ubicacion de la Seccion de Navegacion
+		en esta seccion colocamos los links a los demas sitios ya sean internos o externos -->
+		<nav>
+			<ul class="links">
+				<li><a href="index.html">Etiquetas</a></li>
+				<li><a href="imagenes.html">Imagenes</a></li>
+				<li><a href="formularios.html">Formularios</a></li>
+				<li class="active"><a href="tablas.html" style="color:#192168">Tablas</a></li>
+			</ul>
+		</nav>
+
+	<!-- ASIDE: etiqueta que se utiliza para identificar contenido tangencial de nuestra pagina
+		en el caso de los Blogs, puede utilizarse para mostrar todos los posts o para un listado de productos que pueden llegar a interesar a un Visitante en las paginas de Compra/venta -->
+		<aside>
+			<p>Una prueba de que nada se desperdicia, todo se recicla.
+			Esas viejas etiquetas que volvieron en forma de Tablas</p>
+		</aside>
+
+	<!-- ARTICLE: Indica donde se ubicara el contenido Principal de nuestra pagina 
+		la informacion colocada en Article posee relacion directa con el elemento HEADER -->
+		<article>
+		<!-- SECTION: representa un elemento que puede funcionar tanto dentro como fuera de nuestra pagina
+			Su contenido es individual y es afectado por su entorno, por lo tanto puede contar con otro elementos Jerarquicos cono HEADER H1 FOOTER sin afectar la semantica de mi pagina -->
+			<section>
+				<p><strong>HELL is Empty & the TABLES are Here</strong><br>
+				<em>To DO a Great RIGHT, DO a Little WRONG</em></p>
+				<p> 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>	
+				
+				<p>
+					Aunque por mas que esta version interprete todo lo que estemos escribiendo sin respetar la estructura del lenguaje a rajatablas, es fundamental, no caer en la falacia de que el navegador interpretara auromaticamente todo nuestro codigo, ya que no es tan asi. 
+				</p>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</section>
+			<section>
+				<p> <strong>Ejemplo de Codigo HTML</strong></p>
+				<div class="section">
+					<code>
+						<p class="code">&lt;!DOCTYPE html></p>
+						<p class="code" style="margin-left:2rem;color:lightgreen;">&lt;html></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;head></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;title><span>Titulo de Mi Pagina</span> &lt;/title></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;/head></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;body></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;/body></p>
+						<p class="code" style="margin-left:2rem;color:lightgreen;">&lt;/html></p>
+					</code>
+				</div>
+			</section>
+		</article>
+
+
+	<!--FOOTER: equivale al pie de pagina de nuestro documento y aqui es donde se coloca informacion de &copy Copyright, derechos de autor, propiedad intelectual, datos de contacto y links a otras paginas del sitio o redes sociales, si bien no es obligatorio, hoy en dia es standar el uso de este tipo de elementos-->
+		<footer>
+			<div class="nav">
+				<ul class="links">
+					<li><a href="index.html">Etiquetas</a></li>
+					<li><a href="imagenes.html">Imagenes</a></li>
+					<li><a href="formularios.html">Formularios</a></li>
+					<li class="active"><a href="tablas.html" style="color:#192168">Tablas</a></li>
+				</ul>
+			</div>
+			<div class="autor">
+				<p>Diseñado por <strong>CRISTIAN RACEDO</strong><br>
+				&copy todos los Derechos Reservados</p>
+			</div>
+		</footer>
+	</body>
+</html>

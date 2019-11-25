@@ -1,0 +1,116 @@
+/* CSS	*/	
+	
+	*{
+		margin:0;
+		padding:0;
+		border:0;
+		font-family: 'century gothic', helvetica, sans-serif;
+		text-decoration: none;
+		color:#f2f2f2;
+		}
+	
+	hr{
+		color:white;
+		border-style:solid;
+		border-width: 0.5px;
+	}
+
+	body{	
+		background-color:rgb(20, 150, 100);
+	}
+	
+	header{
+		background-color:rgba(20, 150, 100, 0.8);
+		padding: 20px;
+		text-align:center;
+	}
+
+	header h1{	
+		margin-bottom:-0.5rem;
+		font-size:2.2rem;
+	}
+
+	nav, .nav{	
+		background-color:#192168;
+	}
+
+	nav li, .nav li{
+		display:inline-block;
+		padding:0.5rem;
+	}
+
+	a:hover, .active, li:hover{
+		background-color:lightgrey;
+		color:#192168;
+	}
+
+	article{
+		padding:10px;
+		width:65%;
+		background-color:lightgrey;
+		color:blue;
+	}
+	
+	aside{	
+		float:right;
+		width:30%;
+		padding-top:10px;
+		background-color:rgba(20, 150, 100);
+		overflow:visible;
+	}
+
+	footer{
+		overflow:visible;
+		clear: both;
+		background-color:rgba(20, 150, 100, 0.8);
+	}
+
+	section p{	
+		color:#192168;
+		padding:10px;
+		text-align:justify;
+		margin: 0px 50px 0px 15px;
+	}
+
+	strong, em {
+		color:#192168;
+	}
+
+	.autor{
+		padding:1rem;
+		text-align:center;
+		color:rgba(255, 255, 250, 0.8);
+	}
+
+	code{
+		background-color:#192168;
+		margin-right:10px;
+		text-shadow: 0.8px 0.8px 0.5px black;
+		text-align: left;
+		}
+
+	.section{
+		background-color:#192168;
+		padding:10px;
+		border-radius: 10px;
+		margin-left: 20px;
+		margin-top:-5px;
+		margin-bottom: 10px;
+		width:80%;
+	}
+
+	.code{
+		margin:0;
+		padding:0;
+		border:0;
+		color:lightgrey;
+	}
+
+	li{	
+		text-transform: small-caps;
+		text-decoration-style: solid;
+	}
+
+	form *{
+		color:#192168;
+	}

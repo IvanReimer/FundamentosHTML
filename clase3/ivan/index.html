@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formularios</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*
+		{
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+		header
+		{
+			background-color: darkblue;
+			color: lightgrey;
+			overflow: hidden;
+		}
+		main
+		{
+			padding: 50px;
+			padding-left: 20px; 
+			background-color: grey;
+			color: darkblue;
+		}
+		nav ul, ul li
+		{
+			display: inline;
+			padding-left: 0.5rem;
+		}
+		form *
+		{
+			border-radius: 5px;
+			height: 30px;
+			width: 200px;
+		}
+		a
+		{
+			text-decoration: none;
+			color: lightgrey;
+		}
+		a:hover
+		{
+			background-color: lightgrey;
+			color: darkblue;
+		}
+		label
+		{
+			font-weight: bold;
+
+		}
+	</style>
+</head>
+<body>
+	<!-- esta es la etiqueta &lt;img&gt;, que se utiliza para imagenes</p>
+	<p>esta es el signo para &nbsp; &nbsp; &nbsp; &nbsp;espacios</p>
+	<p>este es el signo para copy &copy; 
+	<article> se usa para contenido que se vincula con la pagina
+	<section> se usa para contenido que puede que no tenga nada que ver con el contenido de la pagina
+	-->
+	<header>
+		<img style="width: 100px; height: 100px; float: left; margin: 10px" src="imagenes/html5.png" ">
+		<img style="width: 75px; height: 100px; float: right; margin:10px" src="imagenes/css3.png">
+		<!-- <img style="width: 75px; height: 100px" src="imagenes/logo.png"> -->
+
+		<nav>
+			<ul>
+				<!-- hipervinculo absoluto -->
+				<li> <a href="http://www.educacionit.com"> Inicio</a> </li>
+				<!-- hipervinculo relativo -->
+				<li> <a href="galeria.html"> Galeria</a> </li>
+				<!-- hipervinculo ancla -->
+				<li> <a href="#contacto" style="background-color: lightgrey; color: darkblue; font-weight: bolder; "> Contacto </a> </li>
+			</ul>
+
+		</nav>
+	</header>
+	<main>
+		<aside>
+			
+
+
+
+		</aside>
+		<article>
+			<form id="contacto" action="contacto.php" method="post">
+				<label> Nombre<br> 
+						<input type="text" name="nombre">
+
+				</label> <br>
+				<label> Edad <br>
+					<input type="number" min="1" max="150" name="edad">
+				</label> <br>
+				<label> Correo<br> 
+						<input type="text" name="email" placeholder="miCorreo@servidor.com">
+				</label> <br>
+				<label for="fecha"> fecha de nacimiento
+				</label><br>
+				<input type="date" name="fecha">
+				<br> <br>
+				<textarea style="resize: none; height: 150px; width: 300px">
+					
+				</textarea>
+				<br>
+				<input type="reset" name="" style="width: 100px;">
+				<input type="submit" name="" style="width: 100px;">
+			</form>
+
+
+
+
+		</article>
+	</main>
+
+</body>
+</html>

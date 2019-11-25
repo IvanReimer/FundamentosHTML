@@ -1,0 +1,193 @@
+<!DOCTYPE html> <!-- Etiqueta de Apertura para un documento HTML version 5
+					gracias a la simplificacion por parte de la W3C es mucho mas sencillo el uso de esta etiqueta.
+					EJEMPLO DE VERSION ANTERIOR DE LA ETIQUETA DOCTYPE:
+
+					<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+					<html xmlns="http://www.w3.org/1999/xhtml">
+ -->
+<!-- HTML: Etiqueta que incica lo que abarca mi documento
+	debemos tenes en cuenta que el Mal cierre de una etiqueta, escribir una propiedad equivocada o el mal cierre de un valor, hara que el navegado no pueda interpretar correctamente la sintaxis de nuestro HTML -->
+<html>
+
+<!-- HEAD: representa la cabecera del sitio y aqui colocaremos todos los elementos no visibles
+	tambien se pueden establecer las reglas CSS y comandos JS ademas de la vinculacion de METADATOS -->
+	<head>
+	<!-- META -->
+		<meta charset="utf-8">
+
+	<!-- LINK: permite vincular un elemento externo a nuestro documento HTML
+		entre las cosas que podemos vincular se encuentran las Hojas de Estilo CSS, Scripts JS e iconos-->
+		<link rel="stylesheet" type="text/css" href="estilos.css">
+		<link rel="icon" type="icon/png" href="img/icon.png">
+
+	<!-- TITLE: Es el titulo que aparecera en la ventana/pestaña del Navegador -->
+		<title>Curso de HTML5</title>
+
+	</head>
+
+<!-- BODY: Indica el comienzo del cuerpo de la pagina
+	aqui colocaremos todos los elementos visibles (Estructura y Diseño) -->
+	<body>
+
+	<!-- HEADER: Representa la cabecera o encabezado de mi pagina
+		esta seccion es lo primero que se ve en relacion a contenido -->
+		<header>
+			<img src="img/html5.png" style="height:4rem; float: left; margin-top:-10px;">
+			<img src="img/css3.png" style="height:4rem; float: right; margin-top:-10px;">
+			<h1>HTML5</h1>
+			<p class="subtitulo">&nbsp;&nbsp;&nbsp;&nbsp;y mucho mas...</p>
+		</header>
+
+	<!-- NAV: Indica la ubicacion de la Seccion de Navegacion
+		en esta seccion colocamos los links a los demas sitios ya sean internos o externos -->
+		<nav>
+			<ul class="links">
+				<li><a href="index.html">Etiquetas</a></li>
+				<li class="active"><a href="imagenes.html" style="color:#192168">Imagenes</a></li>
+				<li><a href="formularios.html">Formularios</a></li>
+				<li><a href="tablas.html">Tablas</a></li>
+			</ul>
+		</nav>
+
+	<!-- ASIDE: etiqueta que se utiliza para identificar contenido tangencial de nuestra pagina
+		en el caso de los Blogs, puede utilizarse para mostrar todos los posts o para un listado de productos que pueden llegar a interesar a un Visitante en las paginas de Compra/venta -->
+		<aside>
+			<p>Revisa que tipos de imagenes que podemos utilizar y como manipularlas correctamente en HTML5 y CSS3</p>
+			<br>
+			<ul>
+				<li>MAPA DE BITS</li>
+				<hr>
+				<ul style="margin-left:1rem;">
+					<li>&lt;JPG></li>
+					<li>&lt;BMP></li>
+					<li>&lt;PNG></li>
+					<li>&lt;GIF></li>
+					<li>&lt;TIFF></li>
+				</ul>
+				<br>
+				<li>VECTORES</li>
+				<hr>
+				<ul style="margin-left:1rem;">						
+					<li>&lt;SVG></li>
+					<li>&lt;SWF></li>
+					<li>&lt;VML></li>
+					<li>&lt;WMF></li>
+					<li>&lt;EPS></li>
+				</ul>
+				<br>
+				<li>FORMATO DE AUTOR</li>
+				<hr>
+				<ul style="margin-left:1rem;">
+					<li>&lt;PSD></li>
+					<li>&lt;AI></li>
+					<li>&lt;CDR></li>
+					<li>&lt;CAD></li>
+				</ul>
+				<br>
+				<li>TIPO DE MEZCLAS</li>
+				<hr>
+				<ul style="margin-left:1rem;">
+					<li>&lt;RGB></li>
+					<li>&lt;CMYK></li>
+					<li>&lt;HSA></li>
+					<li>&lt;HEX></li>
+					<li>&lt;RGBA></li>
+				</ul>
+				<br>
+				<li>ETIQUETAS</li>
+				<hr>
+				<ul style="margin-left:1rem;">
+					<li>&lt;img></li>
+					<li>&lt;figure></li>
+					<li>&lt;figcaption></li>
+					<li>&lt;picture></li>
+				</ul>
+			</ul>
+		</aside>
+		</aside>
+
+	<!-- ARTICLE: Indica donde se ubicara el contenido Principal de nuestra pagina 
+		la informacion colocada en Article posee relacion directa con el elemento HEADER -->
+		<article>
+		<!-- SECTION: representa un elemento que puede funcionar tanto dentro como fuera de nuestra pagina
+			Su contenido es individual y es afectado por su entorno, por lo tanto puede contar con otro elementos Jerarquicos cono HEADER H1 FOOTER sin afectar la semantica de mi pagina -->
+			<section>
+				<p><strong>VECTORS vs RASTERS</strong><br>
+					<em>the Ultimate Match!</em></p>
+				<p> 
+					<img src="img/html5.png" style="float:left; height:120px;">
+					En la ultima version de HTML encontramos dos nuevos elementos, estos son las etiquetas <code>&lt;figure></code> y <code>&lt;figcaption></code> que corresponden a un elemento grafico y su definicion. Si bien, todavia seguimos utilizando la etiqueta <code>&lt;img></code> el uso de esta nueva etiqueta refuerza la estructura semantica de nuestro documento HTML.
+				</p>
+
+				<p>
+					Uno de los aspectos mas importantes de la implementacion de CSS junto a nuestros documentos HTML, corresponde al uso estilizado de imagenes. Entre los formatos mas utilzados para Web, encontramos dos estandares MAPA DE BITS (Raster) y GRAFICOS GENERADOS POR COMPUTADORA (vector)
+				</p>
+				
+				<p>
+					<strong>MAPA DE BITS:</strong> es una estructura o fichero de datos que representa una rejilla rectangular de píxeles o puntos de color, denominada matriz, que se puede visualizar en un monitor, papel u otro dispositivo de representación.
+					<br>Entre los formatos mas utilizados para Web encontramos los siguientes
+					<br><strong>JPG (Joint Photographic Expert Group)</strong>
+					<br><strong>PNG (Portable Network Graphics)</strong>
+					<br><strong>GIF (Graphics Interchange Format)</strong>
+				</p>
+				
+				<figure>
+					<img src="https://image.freepik.com/free-vector/analog-camera-icon_23-2147511482.jpg" style="width:300px;">
+					<figcaption>Camara Tomada del sitio FREEPIK</figcaption>
+				</figure>				
+				<p>
+					<strong>GRAFICOS GENERADOS POR COMPUTADORA:</strong> imagen digital formada por objetos geométricos dependientes (segmentos, polígonos, arcos, muros, etc.), cada uno de ellos definido por atributos matemáticos de forma, de posición, etc. Por ejemplo un círculo de color rojo quedaría definido por la posición de su centro, su radio, el grosor de línea y su color.
+					<br>Entre los formatos mas utilizados para Web encontramos los siguientes
+					<br><strong>SVG (Scalable Vector Graphics)</strong>
+					<br><strong>VML (Vector Markup Language)</strong>
+					<br><strong>SWF (Small Web Format)</strong>
+				</p>
+
+				<p>
+					<img src="img/css3.png" style="float:right; height:180px; margin-left:20px">
+					Si bien podemos utilizar, como valor del <strong>atributo SRC</strong>, la <strong>direccion URL</strong> de algun repositorio de imagenes, es aconsejable que dispongamos de las imagenes que utilizaremos para nuestro sitio y las almacenemos en una carpeta donde se encuentre nuestro proyecto. Esto se debe a que al utilizar una <strong>fuente externa</strong>, estas imagenes pueden estar dispuestas a modificacion, ya sea que se modifique la <strong>direccion URL</strong> de la misma y por lo tanto quede inaccesible o porque la misma haya sido eliminada del servidor en el que esta se encontraba almacenada.
+				</p>
+			</section>
+			<section>
+				<p> <strong>Ejemplo de Codigo HTML</strong></p>
+				<div class="section">
+					<code>
+						<p class="code">&lt;!DOCTYPE html></p>
+						<p class="code" style="margin-left:2rem;color:lightgreen;">&lt;html></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;head></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;title><span>Titulo de Mi Pagina</span> &lt;/title></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;/head></p>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;body></p>
+						<p class="code" style="margin-left:6rem;color:lightblue;">&lt;img src=<span>"Ruta de imagen"</span> alt=<span>"texto alternativo (en caso de no cargarse)"</span> title=<span>"titulo (no visible)"</span>></p>
+						<code>
+							<p class="code" style="margin-left:6rem;">Ejemplo de URL:<br>
+							<span style="color:lightgreen">&lt;!-- ruta absoluta (externa)--></span><br>
+							"https://alumni.education/assets/img/svg/alumni-logo.svg"<br>
+							<span style="color:lightgreen">&lt;!-- ruta relativa (interna)--></span><br>
+							"img/logo.png"</p>
+						</code>
+						<p class="code" style="margin-left:4rem;color:pink;">&lt;/body></p>
+						<p class="code" style="margin-left:2rem;color:lightgreen;">&lt;/html></p>
+					</code>
+				</div>
+			</section>
+		</article>
+
+
+	<!--FOOTER: equivale al pie de pagina de nuestro documento y aqui es donde se coloca informacion de &copy Copyright, derechos de autor, propiedad intelectual, datos de contacto y links a otras paginas del sitio o redes sociales, si bien no es obligatorio, hoy en dia es standar el uso de este tipo de elementos-->
+		<footer>
+			<div class="nav">
+				<ul class="links">
+					<li><a href="index.html">Etiquetas</a></li>
+					<li class="active"><a href="imagenes.html" style="color:#192168">Imagenes</a></li>
+					<li><a href="formularios.html">Formularios</a></li>
+					<li><a href="tablas.html">Tablas</a></li>
+				</ul>
+			</div>
+			<div class="autor">
+				<p>Diseñado por <strong>CRISTIAN RACEDO</strong><br>
+				&copy; todos los Derechos Reservados</p>
+			</div>
+		</footer>
+	</body>
+</html>

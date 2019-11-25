@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		Laboratorio 2 Clase 3
+	</title>
+	<style>
+		body
+		{
+			text-align: center;
+		}
+
+
+
+	</style>
+</head>
+<body>
+
+	<h1>Contacto</h1>
+
+	<form action="contacto.php" method="POST">
+
+	<label for="nombre_rotulo">Nombre</label>
+
+	<br>
+	<!-- nombre -->
+	<input type="text" name="nombre" id="nombre_rotulo" placeholder="Juan Pedro" maxlength="50" style="width: 250px; height: 30px;" required>
+	
+	<br>
+
+	<label for="email_rotulo">Email</label>
+
+	<br>
+	<!-- email -->
+	<input type="Email" name="email" id="email_rotulo" placeholder="info@miweb.com" maxlength="100" style="width: 250px; height: 30px;" required>
+
+	<br>
+
+	<label for="sector_rotulo">Sector</label>
+ 	
+ 	<br>
+	<!-- sector -->
+ 	<select name="sector" id="sector_rotulo" style="width: 250px; height: 30px;" required>
+
+ 		<option value="sectorA"> Sector A</option>
+	
+		<option value="sectorB"> Sector B</option>
+
+		<option value="sectorC">Sector C</option>
+
+ 	</select>
+			
+	<br>
+
+	<label for="comentarios_rotulo">Comentarios</label>
+
+	<br>
+	<!-- comentario -->
+	<textarea name="comentarios" id="comentarios_rotulo" style="width: 250px; height: 100px;"></textarea>
+
+	<br>
+
+	<label>Estado Civil</label>
+
+	<br>
+
+	<label for="estadoSoltero_rotulo">Soltero</label>
+	<!-- estado Civil -->
+	<input type="radio" id="estadoSoltero_rotulo" name="estado" value="soltero" required>
+	
+	<label for="estadoCasado_rotulo">Casado</label>
+	<!-- estado Civil -->
+	<input type="radio" id= "estadoCasado_rotulo" name="estado" value="casado" required>
+
+	<br>
+
+	<label for="acepta_rotulo"> Acepta terminos y condiciones</label>
+	
+	<input type="checkbox" name="aceptaTerminos" id="acepta_rotulo" value="acepta" required>
+	
+	<br>
+
+	<input type="submit" value="Enviar" style="margin: 10px; height: 30px;width: 250px; color: white; background-color: green; border-width: 1px; border-color: white; border-style: dashed;">
+
+	</form>
+</body>
+</html>
